@@ -11,11 +11,6 @@ A minimal, reproducible MATLAB demo that illustrates the difference between an *
 
 ---
 
-## Quick summary (one line to use in your post)
-> A compact MATLAB demo showing that the L2 (mean) global shift minimizes RMSE but is pulled by outliers, while the L1 (median) shift minimizes MAE and is robust to a few bad wells.
-
----
-
 ## Requirements
 
 - MATLAB R2018 or later.  
