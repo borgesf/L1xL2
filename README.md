@@ -21,11 +21,11 @@ A minimal, reproducible MATLAB demo that illustrates the difference between an *
 
 ## How to run
 
-1. Download or copy `L1_vs_L2_clean_documented.m` into a folder.  
+1. Download or copy `L1xL2.m` into a folder.  
 2. Open MATLAB and set the folder as the current folder.  
 3. Run the script:
 ```matlab
->> L1_vs_L2_clean_documented
+>> L1xL2
 ```
 4. Outputs:
    - Console printout with summary statistics (mean, median, std, MAE, RMSE).  
