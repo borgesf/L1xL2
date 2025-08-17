@@ -6,7 +6,7 @@ A minimal, reproducible MATLAB demo that illustrates the difference between an *
 
 ## What this repo contains
 
-- `L1_vs_L2_clean_documented.m` — single, self-contained MATLAB script (copy/paste ready).  
+- `L1xL2.m` — single, self-contained MATLAB script (copy/paste ready).  
   The script creates a synthetic true depth surface, generates a seismic-derived estimate, samples wells, injects measurement noise + a small fraction of large outliers, computes residuals, computes/apply L2 and L1 global shifts, and produces comparison figures and metrics.
 
 ---
