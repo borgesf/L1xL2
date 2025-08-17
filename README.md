@@ -29,7 +29,7 @@ A minimal, reproducible MATLAB demo that illustrates the difference between an *
 ```
 4. Outputs:
    - Console printout with summary statistics (mean, median, std, MAE, RMSE).  
-   - A PNG figure `L1_vs_L2_clean_documented.png` saved in the current folder (maps + histogram + metrics).
+   - A PNG figure `L1_vs_L2_plot.png` saved in the current folder (maps + histogram + metrics).
 
 ---
 
@@ -38,10 +38,10 @@ A minimal, reproducible MATLAB demo that illustrates the difference between an *
 Open the script and modify these variables near the top:
 
 - `Nwells` — number of well samples (default: `20`).  
-- `measurement_noise_std` — standard deviation of typical well noise (meters, default: `4`).  
-- `outlier_fraction` — fraction of wells that receive large errors (default: `0.08`).  
+- `measurement_noise_std` — standard deviation of typical well noise (meters, default: `5`).  
+- `outlier_fraction` — fraction of wells that receive large errors (default: `0.1`).  
 - `noise_amplitude` — amplitude of small perturbation added to seismic estimate (meters, default: `0.8`).  
-- `rng(2025)` — random seed for reproducibility (change or remove to get other random draws).
+- `rng(0)` — random seed for reproducibility (change or remove to get other random draws).
 
 ---
 
@@ -54,14 +54,6 @@ Open the script and modify these variables near the top:
   - When you have a few large outliers, **L2** will move toward those outliers (smaller RMSE but larger sensitivity).
   - **L1** remains closer to the central cluster (smaller MAE, more robust).
 - The demonstration is intentionally simple (global single-number shifts) so the effect is isolated and easy to explain.
-
----
-
-## Recommended use in a Medium post
-
-- Show the three small maps (wells colored by residual: original, after L2, after L1) and the histogram.  
-- Paste the one-line summary (above) as the figure caption.  
-- Mention the printed MAE / RMSE numbers in the script output to support your conclusions.
 
 ---
 
